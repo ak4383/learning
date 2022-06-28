@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>More Pleasures</title>
+        <meta charset="utf-8" />
+
+        <style>
+            h1 {
+            /* Комментарий в CSS */
+            color: #FFFFFF;
+            background-color: hotpink;
+            }
+        </style>
+        <script>
+            function sayHello() {
+                //Здесь отвратительные функции))
+                document.getElementById("hedr1").innerText = "Hello, world!";
+                document.getElementById("hedr1").style.color = 'red';
+                document.getElementById("hedr1").style.background = 'green';
+                document.getElementById("sla").style.display = 'none';
+            }
+            function slaBreath() {
+                document.getElementById("hedr2").innerText = 'Slaanesh is the Lord of Pleasure';
+            }
+            function slaStop() {
+                document.getElementById("hedr2").innerText = 'Section 2';
+            }
+            function slaBreath2() {
+                document.getElementById("breath").play();
+            }
+        </script>
+    </head>
+
+    <body>
+        <!-- Комментарий HTML -->
+        <h1 id="hedr1">Just Demo</h1>
+        <button onclick="sayHello();">Click me!</button>
+        <p>Kartman</p>
+        <p>Kenny<br />
+            Stan</p>
+        <p>Kale</p>
+        <h1 id="hedr2">Section 2 </h1>
+        <img src="Slaanesh.jpg" style="width: 400px" id="sla" onmouseover="slaBreath();" onmouseout="slaStop();" onclick="slaBreath2();"/>
+        <audio src="Seksualnyi_vzdoh_zhenschiny.mp3" type="audio/mpeg" id="breath"></audio>
+        <p>
+          <a href="https://www.microsoft.com">See Micro</a>
+          <table border="1" style="width: 50%">
+            <tr>
+                <td>Naturalborn Killers</td>
+                <td>Naturalborn Killers</td>
+                <td>Naturalborn Killers</td>
+                </tr>
+            <tr>
+                <td>Naturalborn Killers</td>
+                <td>Naturalborn Killers</td>
+                <td>Naturalborn Killers</td>
+            </tr>
+              <tr>
+                <td>Naturalborn Killers</td>
+                <td>Naturalborn Killers</td>
+                <td>Naturalborn Killers</td>
+            </tr>
+          </table>
+        </p>
+    </body>
+
+</html>
