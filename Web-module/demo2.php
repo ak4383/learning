@@ -17,5 +17,11 @@
         echo "<h3>Время победы Тзинча: $now</h3>";
 
         ?>
+
+        <form action="doubler.php">
+            <input name="num" />
+            <button>Сколько душ ты мне принесешь? Я отдам вдвое больше, обещаю...</button>
+        </form>
+
     </body>
 </html>
