@@ -1,11 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Demo PHP</title>
-    <meta charset="utf-8">
-</head>
+<html>
+    <head>
+        <title>Demo PHP</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Hello from PHP</h1>
+        <?php
 
-<body>
-    <h1>Калькулятор на чистом JS</h1>
-</body>
+        $x = 2;
+        $y = 2;
+        $z = $x + $y;
+
+        ?>
+    </body>
 </html>
