@@ -1,2 +1,4 @@
-$pwd="123456"
-echo hash('sha256',$pwd)
+<?php
+$pwd="123456";
+echo hash('sha256',$pwd);
+>
