@@ -4,6 +4,7 @@
         <meta charset="utf-8">
     </head>
     <body>
+        <a href = "index1.html">Yankee go home</a> <br />
         <h1>Hello from CHAOS</h1>
         <?php
 
