@@ -18,7 +18,7 @@
 
         <form action="check_login.php" method="POST" >
             <input type="text" name="txtUser" /> <br />
-            <input type="password" name="pwd" /> <br />
+            <input type="password" name="txtPwd" /> <br />
             <input type="submit" value="Take my soul" />
 
         </form>
