@@ -1,3 +1,10 @@
+<?php
+// Фактически, здесь авторизация
+    session_start();
+    if (!isset($_SESSION["user"])) {
+        die("Тебе не обмануть Владыку Перемен, ничтожный.")
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

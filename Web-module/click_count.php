@@ -3,13 +3,13 @@
 ?>
 <html>
 <head>
-    <title>Khorn altar</title>
+    <title>Nurgl altar</title>
     <meta charset="utf-8">
 </head>
 
 <body>
     <form>
-        <input type="submit" value="Еще череп для трона" />
+        <input type="submit" value="Заразиться еще" />
     </form>
     <?php
         if (isset($_SESSION["count"]))

@@ -1,3 +1,6 @@
+ <?php
+    session_start();
+?>
 <html>
 <head>
     <title>Checking</title>
@@ -26,7 +29,8 @@
         mysqli_close($conn);
 
         if ($num_rows >= 1) {
-        echo "<h1>Тзинч забрал вашу душу, $user</h1>";
+            echo "<h1>Тзинч забрал вашу душу, $user</h1>";
+            $_SESSION["user"] = $user;
         }
         else {
             echo "<h1>Неверный логин!</h1>";
