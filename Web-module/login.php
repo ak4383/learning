@@ -14,7 +14,7 @@
 
 <body>
     <a href = "index1.html">Yankee go home</a> <br />
-    <h1>Для внесения душ нужно сначала отдать свою:</h1>
+    <h1 id="hdr1">Для внесения душ нужно сначала отдать свою:</h1>
 
         <form action="check_login.php" method="POST" >
             <input type="text" name="txtUser" /> <br />

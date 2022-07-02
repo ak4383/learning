@@ -26,7 +26,7 @@
 
 
         $i += 1;
-        echo "$i черепов";
+        echo "$i ужасающих болезней";
         $_SESSION["count"] = $i;
         //setcookie("count"), $i);
     ?>

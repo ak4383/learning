@@ -20,7 +20,7 @@
         $pwd = $_REQUEST["txtPwd"];
         $hash = hash('sha256', $pwd);
 
-        $sql = "SELECT * FROM users WHERE Login='$user' AND PwdHash='$hash'";
+        $sql = "SELECT * FROM users WHERE Login='$user' AND PwdHash='$hash' ";
 
         $conn = mysqli_connect("localhost:3306", "root", "", "cyb3");
         $result = mysqli_query($conn, $sql);
