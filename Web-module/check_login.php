@@ -23,8 +23,9 @@
         $result = mysqli_query($conn, $sql);
         //var_dump(mysqli_num_rows($result));
         $num_rows = mysqli_num_rows($result);
+        mysqli_close($conn);
 
-        if ($num_rows == 1) {
+        if ($num_rows >= 1) {
         echo "<h1>Тзинч забрал вашу душу, $user</h1>";
         }
         else {
