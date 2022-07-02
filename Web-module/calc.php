@@ -1,3 +1,10 @@
+<?php
+    session_start();
+    if (isset($_SESSION["user"]) == FALSE)
+    {
+        die("Тебе не обмануть Владыку Перемен, ничтожный.");
+    }
+?>
 <html>
 <head>
     <title>Calc</title>
