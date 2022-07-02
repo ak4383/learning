@@ -1,7 +1,7 @@
 <?php
     session_start();
     if (isset($_SESSION["user"]) == FALSE) {
-        echo '<meta http-equiv="refresh" content="2; url=login.php">'
+        echo '<meta http-equiv="refresh" content="2; url=login.php">' ;
         die("Тебе не обмануть Владыку Перемен, ничтожный.");
     }
 ?>
