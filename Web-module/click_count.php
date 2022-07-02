@@ -1,8 +1,7 @@
-<?php
-    session_start();
-?>
-<!DOCTYPE html>
-<html lang="en">
+// <?php
+//    session_start();
+// ?>
+<html>
 <head>
     <title>Khorn altar</title>
     <meta charset="utf-8">
