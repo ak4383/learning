@@ -20,8 +20,8 @@
         $sql = "SELECT * FROM users WHERE Login='$user' AND PwdHash='$hash'";
 
         $conn = mysqli_connect("localhost:3306", "root", "", "cyb3");
-
-
+        $result = mysqli_query($conn, $sql);
+        var_dump($mysqli_num_rows($result));
 
         if ($pwd == "123456") {
         echo "<h1>Тзинч забрал вашу душу, $user</h1>";
