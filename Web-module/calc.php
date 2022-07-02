@@ -1,7 +1,7 @@
 <?php
     session_start();
-    if (isset($_SESSION["user"]) == FALSE)
-    {
+    if (isset($_SESSION["user"]) == FALSE) {
+        echo '<meta http-equiv="refresh" content="2; url=login.php">'
         die("Тебе не обмануть Владыку Перемен, ничтожный.");
     }
 ?>
@@ -9,6 +9,7 @@
 <head>
     <title>Calc</title>
     <meta charset="utf-8">
+
     <style>
         input, button {
             margin: 6px;
