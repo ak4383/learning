@@ -19,7 +19,7 @@
     <a href = "index1.html">Yankee go home</a> <br />
     <h1>Калькулятор на классическом PHP</h1>
     <?php
-        if (isset($_REQUEST["num1'])) {
+        if (isset($_REQUEST["num1"])) {
         $x = $_REQUEST["num1"];
         $y = $_REQUEST["num2"];
         $z = $x + $y;
