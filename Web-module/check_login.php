@@ -15,6 +15,14 @@
     <?php
         $user = $_REQUEST["txtUser"];
         $pwd = $_REQUEST["txtPwd"];
+        $hash = hash('sha256', $pwd);
+
+        $sql = "SELECT * FROM users WHERE Login='$user' AND PwdHash='$hash'";
+
+        $conn = mysqli_connect("localhost:3306", "root", "", "cyb3");
+
+
+
         if ($pwd == "123456") {
         echo "<h1>Тзинч забрал вашу душу, $user</h1>";
         }
