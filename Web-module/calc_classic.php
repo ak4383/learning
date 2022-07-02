@@ -34,6 +34,7 @@
         <button>+</button>
         <button>-</button> <br />
     </form>
-        <input type="text" value="<?=$z?>"/>
+        <input type="text" value="<?=$z?>"/> <br />
+        <textarea></textarea>
 </body>
 </html>
