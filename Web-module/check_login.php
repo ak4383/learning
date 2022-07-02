@@ -15,7 +15,12 @@
     <?php
         $user = $_REQUEST["txtUser"];
         $pwd = $_REQUEST["txtPwd"];
+        if $pwd == "123456" {
         echo "<h1>Тзинч забрал вашу душу, $user</h1>";
+        }
+        else {
+            echo "<h1>Неверный логин!</h1>";
+        }
     ?>
 
 </body>
