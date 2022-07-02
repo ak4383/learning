@@ -16,12 +16,12 @@
     <a href = "index1.html">Yankee go home</a> <br />
     <h1>Для внесения душ нужно сначала отдать свою:</h1>
 
-        <form>
+        <form action="check_login.php" method="POST" >
             <input type="text" name="txtUser" /> <br />
             <input type="password" name="pwd" /> <br />
-            <input type="submit" value="Возьми мою душу" />
+            <input type="submit" value="Take my soul" />
 
-    </form>
+        </form>
 
 </body>
 </html>
