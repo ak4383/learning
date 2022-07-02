@@ -5,8 +5,7 @@
 <!--         die("Тебе не обмануть Владыку Перемен, ничтожный.") -->
 <!--     } -->
 <!-- ?> -->
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <title>Calc</title>
     <meta charset="utf-8">
