@@ -24,11 +24,11 @@
         $z = $x + $y;
     ?>
     <form>
-    <input type="text" name="num1" /> <br />
-    <input type="text" name="num2" /> <br />
-    <button>+</button>
-    <button>-</button> <br />
+        <input type="text" name="num1" value="<?=$x?>"/> <br />
+        <input type="text" name="num2" value="<?=$y?>"/> <br />
+        <button>+</button>
+        <button>-</button> <br />
     </form>
-    <input type="text" value="<?=$z?>"/>
+        <input type="text" value="<?=$z?>"/>
 </body>
 </html>
