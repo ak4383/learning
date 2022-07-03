@@ -19,5 +19,5 @@ foreach($people as $person) {
 }
 
 // Отправим извлеченные данные в формате json (сериализация)
-echo json_encode($people);
+echo json_encode($results);
 
