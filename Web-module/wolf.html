@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Wolf</title>
+    <meta charset="utf-8">
+    <script>
+        var url = "api/goat.php";
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", url);
+            xhr.onload = function() {
+                var result = xdr.responseText;
+                alert(result);
+            }
+            xhr.send();
+    </script>
+</head>
+
+<body>
+
+</body>
+</html>
