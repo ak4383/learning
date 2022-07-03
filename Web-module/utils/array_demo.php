@@ -17,5 +17,8 @@ foreach($people as $person) {
     $name = $person[0];
     $city = $person[1];
     echo("$i. $name from $city <br />");
-    $i = $i = 1;
+    $i = $i + 1;
 }
+
+$person1 = array("FirstName" => "Yuri", "LastName" => "Andrienko", "City" => "Moscow", "Salary" => 123456);
+echo $person1['FirstName']." ".$person1['LastName']." ".$person1['City']." ".$person1['Salary'];
