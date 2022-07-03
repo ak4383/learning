@@ -35,6 +35,7 @@
 </head>
 
 <body>
+    <a href = "index1.html">Yankee go home</a> <br />
     <h1>Поиск по людям</h1>
     Введите первые буквы фамилии человека:
     <input type="text" id="letters" oninput="search();"/>
