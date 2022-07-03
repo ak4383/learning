@@ -13,9 +13,9 @@
 </head>
 
 <body>
-    <h1>поиск по людям</h1>
+    <h1>Поиск по людям</h1>
     Введите первые буквы фамилии человека:
-    <input type="text" id="letters" on/>
+    <input type="text" id="letters" oninput="search();"/>
 
 </body>
 </html>
