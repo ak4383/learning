@@ -12,7 +12,11 @@
             xhr.open("GET", url);
             xhr.onload = function() {
                 var result = xhr.responseText;
-                alert(result)
+
+                /* Десериализация (из текста в объект) */
+                var people =  JSON.parse(result);
+                alert(people);
+
             };
             xhr.send();
         }
