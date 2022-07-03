@@ -15,6 +15,7 @@
 
                 /* Десериализация (из текста в объект) */
                 var people = JSON.parse(result);
+                var out = "";
 
                 for(var i=0; i < people.length; i++) {
                     var person = people[i];
@@ -22,8 +23,9 @@
                     var lastName = person["LastName"];
                     var city = person["City"];
                     var text = lastName + ", " + firstName + " from " + city + "<br />";
-                    alert(text);
+                    out = out + text;
                 }
+                alert(out);
 
             };
             xhr.send();
