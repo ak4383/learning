@@ -6,7 +6,7 @@
 
     <script>
         function search() {
-            //alert(document.getElementById("letters").value);
+
             var letters = document.getElementById("letters").value;
             var url = "api/people.php?letters=" + letters;
             alert(url);
@@ -22,3 +22,5 @@
 
 </body>
 </html>
+
+//alert(document.getElementById("letters").value);
