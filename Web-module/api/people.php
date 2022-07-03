@@ -8,5 +8,16 @@ $people = [
     array("FirstName" => "Ivan", "LastName" => "Andreev", "City" => "London", "Salary" => 300000)
 ];
 
+// Отфильтруем данные по первым буквам фамилий
+$letters = $_REQUEST["letters"];
+
+$results = [];
+foreach($people as $person) {
+    if (str_starts_with($person["LastName"], $letters)) {
+        array_push($results, $person);
+    }
+}
+
 // Отправим извлеченные данные в формате json (сериализация)
 echo json_encode($people);
+
