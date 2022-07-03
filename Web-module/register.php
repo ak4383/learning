@@ -17,13 +17,13 @@
     <h1 id="hdr1">Регистрация нового пользователя</h1>
 
         <form action="check_register.php" method="POST" >
-            Ваше имя:
+            Ваше имя: <br />
             <input type="text" name="txtUser" /> <br />
-            <p>Ваш email:</p>
+            Ваш email: <br />
             <input type="text" name="email" /> <br />
-            <p>Ваш login:</p>
+            Ваш login: <br />
             <input type="text" name="login" /> <br />
-            <p>Ваш пароль:</p>
+            Ваш пароль: <br />
             <input type="password" name="txtPwd" /> <br />
             <input type="submit" value="Register" />
 
