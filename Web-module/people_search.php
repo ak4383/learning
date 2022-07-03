@@ -6,10 +6,15 @@
 
     <script>
         function search() {
-
             var letters = document.getElementById("letters").value;
             var url = "api/people.php?letters=" + letters;
-            alert(url);
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", url);
+            xhr.onload = function() {
+                var result = xhr.responseText;
+                alert(result)
+            };
+            xhr.send();
         }
     </script>
 
@@ -22,5 +27,3 @@
 
 </body>
 </html>
-
-//alert(document.getElementById("letters").value);
