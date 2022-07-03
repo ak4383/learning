@@ -21,11 +21,11 @@
             <input type="text" name="email" /> <br />
             <input type="text" name="login" /> <br />
             <input type="password" name="txtPwd" /> <br />
-            <input type="submit" value="`Register`" />
+            <input type="submit" value="Register" />
 
         </form>
 
-    <p style="position:absolute;left:0;bottom:0;margin-bottom:0">Текст в левом нижнем углу</p>
+    <p style="position:absolute;right:0;bottom:0;margin-bottom:0">Автор: Артем Ключников</p>
 
 
 
