@@ -1,0 +1,11 @@
+<people>
+    <person>
+       <firstName>Yuri</firstName>
+        <salary>123456</salary>
+    </person>
+    <person>
+        <firstName>Vasya</firstName>
+        <salary>77777</salary>
+    </person>
+
+</people>
