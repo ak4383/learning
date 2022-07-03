@@ -9,11 +9,11 @@ $people = [
 ];
 
 // Отфильтруем данные по первым буквам фамилий
-$letters = $_REQUEST["letters"];
+$letters = strtolower($_REQUEST["letters"]);
 
 $results = [];
 foreach($people as $person) {
-    if (str_starts_with($person["LastName"], $letters)) {
+    if (str_starts_with(strtolower($person["LastName"]), $letters)) {
         array_push($results, $person);
     }
 }
