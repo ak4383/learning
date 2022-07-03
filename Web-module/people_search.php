@@ -25,7 +25,7 @@
                     var text = lastName + ", " + firstName + " from " + city + "<br />";
                     out = out + text;
                 }
-                alert(out);
+                document.getElementById("display").innerHTML = out;
 
             };
             xhr.send();
@@ -38,6 +38,7 @@
     <h1>Поиск по людям</h1>
     Введите первые буквы фамилии человека:
     <input type="text" id="letters" oninput="search();"/>
+    <div id="display"></div>
 
 </body>
 </html>
