@@ -17,7 +17,7 @@
     <h1 id="hdr1">Регистрация нового пользователя</h1>
 
         <form action="check_register.php" method="POST" >
-            <p>Ваше имя:</p>
+            Ваше имя:
             <input type="text" name="txtUser" /> <br />
             <p>Ваш email:</p>
             <input type="text" name="email" /> <br />
