@@ -26,7 +26,7 @@ echo $person1['FirstName']." ".$person1['LastName']." ".$person1['City']." ".$pe
 $people2 [
     array("FirstName" => "Yuri", "LastName" => "Andrienko", "City" => "Moscow", "Salary" => 123456),
     array("FirstName" => "Vasya", "LastName" => "Pupkin", "City" => "Moscow", "Salary" => 77777),
-    array("FirstName" => "Masha", "LastName" => "Mashkina", "City" => "London", "Salary" => 300000),
+    array("FirstName" => "Masha", "LastName" => "Mashkina", "City" => "London", "Salary" => 300000)
 ];
 
 foreach($people2 as $person2) {
