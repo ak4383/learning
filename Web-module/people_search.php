@@ -18,7 +18,11 @@
 
                 for(var i=0; i < people.length; i++) {
                     var person = people[i];
-                    alert(person["LastName"]);
+                    var firstName = person["FirstName"];
+                    var lastName = person["LastName"];
+                    var city = person["City"];
+                    var text = lastName + ", " + firstName + " from " + city + "<br />";
+                    alert(text);
                 }
 
             };
