@@ -14,10 +14,11 @@
                 var result = xhr.responseText;
 
                 /* Десериализация (из текста в объект) */
-                var people =  JSON.parse(result);
-                for(var i=0; i < people.length; i++>) {
+                var people = JSON.parse(result);
+
+                for(var i=0; i < people.length; i++) {
                     var person = people[i];
-                    alert(person["LastName"]));
+                    alert(person["LastName"]);
                 }
 
             };
