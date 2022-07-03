@@ -26,19 +26,19 @@
 
             document.getElementById("num3").value = z;
         }
-        function minus() {
-            var x, y, z;
-            x = parseInt(document.getElementById("num1").value);
-            y = parseInt(document.getElementById("num2").value);
-
-            var url = "api/minus.php?num1=" + х + "&num2=" + y;
-            var xhr = new XMLHttpRequest();
-            xhr.open("GET", url, false);
-            xhr.send();
-            z = xhr.responseText;
-
-            document.getElementById("num3").value = z;
-        }
+        // function minus() {
+        //     var x, y, z;
+        //     x = parseInt(document.getElementById("num1").value);
+        //     y = parseInt(document.getElementById("num2").value);
+        //
+        //     var url = "api/minus.php?num1=" + х + "&num2=" + y;
+        //     var xhr = new XMLHttpRequest();
+        //     xhr.open("GET", url, false);
+        //     xhr.send();
+        //     z = xhr.responseText;
+        //
+        //     document.getElementById("num3").value = z;
+        // }
     </script>
 </head>
 
