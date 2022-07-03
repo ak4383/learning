@@ -15,7 +15,10 @@
 
                 /* Десериализация (из текста в объект) */
                 var people =  JSON.parse(result);
-                alert(people);
+                for(var i=0; i < people.length; i++>) {
+                    var person = people[i];
+                    alert(person["LastName"]));
+                }
 
             };
             xhr.send();
