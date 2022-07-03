@@ -1,4 +1,4 @@
-<html>
+<html lang="en">
 <head>
     <title>Calc using Web API</title>
     <meta charset="utf-8">
@@ -18,7 +18,7 @@
             x = parseInt(document.getElementById("num1").value);
             y = parseInt(document.getElementById("num2").value);
 
-            var url = "api/plus.php?num1=" + х + "&num2=" + y;
+            var url = "api/plus.php?num1=" + x + "&num2=" + y;
             var xhr = new XMLHttpRequest();
             xhr.open("GET", url, false);
             xhr.send();
@@ -26,25 +26,25 @@
 
             document.getElementById("num3").value = z;
         }
-        // function minus() {
-        //     var x, y, z;
-        //     x = parseInt(document.getElementById("num1").value);
-        //     y = parseInt(document.getElementById("num2").value);
-        //
-        //     var url = "api/minus.php?num1=" + х + "&num2=" + y;
-        //     var xhr = new XMLHttpRequest();
-        //     xhr.open("GET", url, false);
-        //     xhr.send();
-        //     z = xhr.responseText;
-        //
-        //     document.getElementById("num3").value = z;
-        // }
+        function minus() {
+            var x, y, z;
+            x = parseInt(document.getElementById("num1").value);
+            y = parseInt(document.getElementById("num2").value);
+
+            var url = "api/minus.php?num1=" + x + "&num2=" + y;
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", url, false);
+            xhr.send();
+            z = xhr.responseText;
+
+            document.getElementById("num3").value = z;
+        }
     </script>
 </head>
 
 <body>
     <a href = "index1.html">Yankee go home</a> <br />
-    <h1>Калькулятор на чистом JS</h1>
+    <h1>Calc using Web API</h1>
     <input type="text" id="num1" /> <br />
     <input type="text" id="num2" /> <br />
     <button onclick="plus();">+</button>
