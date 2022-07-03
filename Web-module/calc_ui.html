@@ -20,11 +20,14 @@
 
             var url = "api/plus.php?num1=" + x + "&num2=" + y;
             var xhr = new XMLHttpRequest();
-            xhr.open("GET", url, false);
-            xhr.send();
-            z = xhr.responseText;
+            xhr.open("GET", url);
+            xhr.onload = function() {
+                z = xhr.responseText;
+                document.getElementById("num3").value = z;
+            }
 
-            document.getElementById("num3").value = z;
+            xhr.send();
+
         }
         function minus() {
             var x, y, z;
@@ -33,11 +36,13 @@
 
             var url = "api/minus.php?num1=" + x + "&num2=" + y;
             var xhr = new XMLHttpRequest();
-            xhr.open("GET", url, false);
-            xhr.send();
-            z = xhr.responseText;
+            xhr.open("GET", url);
+            xhr.onload = function() {
+                z = xhr.responseText;
+                document.getElementById("num3").value = z;
+            }
 
-            document.getElementById("num3").value = z;
+            xhr.send();
         }
     </script>
 </head>
