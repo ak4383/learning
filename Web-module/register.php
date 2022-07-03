@@ -19,8 +19,11 @@
         <form action="check_register.php" method="POST" >
             <p>Ваше имя:</p>
             <input type="text" name="txtUser" /> <br />
+            <p>Ваш email:</p>
             <input type="text" name="email" /> <br />
+            <p>Ваш login:</p>
             <input type="text" name="login" /> <br />
+            <p>Ваш пароль:</p>
             <input type="password" name="txtPwd" /> <br />
             <input type="submit" value="Register" />
 
