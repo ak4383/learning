@@ -24,9 +24,9 @@
         /* Ниже идет запрос к базе, в регистрации нужно делать запись */
         $sql = "SELECT * FROM users WHERE Login=? AND PwdHash=? ";
         /* Задаем переменные через переменные среды, чтобы не хардкодить креды базы данных */
-        $db_server = getenv("cyb_db_server");
-        $db_user = getenv("cyb_db_user");
-        $db_pwd = trim(getenv("cyb_db_pwd"));
+        $db_server = $_ENV["cyb_db_server"];
+        $db_user = $_ENV["cyb_db_user"];
+        $db_pwd = trim($_ENV["cyb_db_pwd"]);
 
         $conn = mysqli_connect($db_server, $db_user, $db_pwd, "cyb3");
         /* Здесь мы безопасно передаем данные. ss - это сокращение типа переменных, string string */
