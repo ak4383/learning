@@ -29,7 +29,7 @@
         $db_user = getenv("cyb_db_user");
         $db_pwd = trim(getenv("cyb_db_pwd"));
 
-        $conn = mysqli_connect($db_server, $db_user, $db_pwd, "cyb3");
+        $conn = mysqli_connect($db_server,$db_user,$db_pwd, "cyb3");
         /* Здесь мы безопасно передаем данные. ss - это сокращение типа переменных, string string */
         $stat = mysqli_prepare($conn, $sql);
         mysqli_stmt_bind_param($stat, "ss", $user, $hash);
