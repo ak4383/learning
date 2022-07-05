@@ -20,11 +20,20 @@
         $pwd = $_REQUEST["txtPwd"];
         $hash = hash('sha256', $pwd);
 
-        $sql = "SELECT * FROM users WHERE Login='$user' AND PwdHash='$hash' ";
-
+/*        $sql = "SELECT * FROM users WHERE Login='$user' AND PwdHash='$hash' "; */
+        /* Ниже идет запрос к базе, в регистрации нужно делать запись */
+        $sql = "SELECT * FROM users WHERE Login=? AND PwdHash=? ";
         $conn = mysqli_connect("localhost:3306", "root", "", "cyb3");
-        $result = mysqli_query($conn, $sql);
-        //var_dump(mysqli_num_rows($result));
+        /* Здесь мы безопасно передаем данные. ss - это сокращение типа переменных, string string */
+        $stat = mysqli_prepare($conn, $sql);
+        mysqli_stmt_bind_param($stat, "ss", $user, $hash);
+        mysqli_stmt_execute($stat);
+        /* Записываем результат в переменную */
+        $result = mysqli_stmt_get_result($stat);
+
+        /* */
+/*        $result = mysqli_query($conn, $sql); */
+/*        var_dump(mysqli_num_rows($result)); */
         $num_rows = mysqli_num_rows($result);
         mysqli_close($conn);
 
