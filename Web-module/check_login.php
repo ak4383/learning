@@ -43,9 +43,9 @@
         $num_rows = mysqli_num_rows($result);
         mysqli_close($conn);
 
-echo "getenv("$cyb3_db_server")";
-echo "getenv("$cyb3_db_user")";
-echo "getenv("$cyb3_db_pwd")";
+echo "getenv('$cyb3_db_server')";
+echo "getenv('$cyb3_db_user')";
+echo "getenv('$cyb3_db_pwd')";
 
         if ($num_rows >= 1) {
             echo "<h1>Тзинч забрал вашу душу, $user</h1>";
