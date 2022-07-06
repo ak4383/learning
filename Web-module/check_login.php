@@ -44,7 +44,7 @@
         mysqli_close($conn);
 
 echo(getenv('cyb3_db_server'));
-echo "getenv('cyb3_db_user')";
+echo getenv('cyb3_db_user');
 echo "getenv('cyb3_db_pwd')";
 
         if ($num_rows >= 1) {
