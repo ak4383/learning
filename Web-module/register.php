@@ -29,7 +29,7 @@
 
         </form>
 
-    <p style="position:absolute;right:0;bottom:0;margin-bottom:0">Автор: Артем Ключников</p>
+    <p style="position:absolute;right:0;bottom:0;margin-bottom:0">Автор: ak4383</p>
 
 
 
